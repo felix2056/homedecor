@@ -122,7 +122,7 @@
                 </li>
 
                 <li>
-                    <a href="/collections/furnishing" class="site-nav--link" data-meganav-type="child">
+                    <a href="/collections/furnishing.php" class="site-nav--link" data-meganav-type="child">
                         furnishing
                     </a>
                 </li>

@@ -38,6 +38,8 @@
 
     <!-- CSS ================================================== -->
     <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/2286845996/digital_wallets/dialog">
     
