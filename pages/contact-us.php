@@ -2,6 +2,8 @@
 
 <?php include_once('../includes/nav.php'); ?>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 <main class="wrapper main-content" role="main">
 
     <div class="container">
