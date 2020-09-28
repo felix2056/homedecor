@@ -1,6 +1,6 @@
-<?php include_once('includes/header.php'); ?>
+<?php include_once('../includes/header.php'); ?>
 
-<?php include_once('includes/nav.php'); ?>
+<?php include_once('../includes/nav.php'); ?>
 
 <main class="wrapper main-content" role="main">
 
@@ -216,4 +216,4 @@
 
 </main>
 
-<?php include_once('includes/footer.php'); ?>
+<?php include_once('../includes/footer.php'); ?>
