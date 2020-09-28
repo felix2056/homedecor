@@ -17,10 +17,11 @@
 
 
                     <ul>
-
                         <li><a href="/search.php">Search</a></li>
 
                         <li><a href="/pages/about-us.php">About us</a></li>
+
+                        <li><a href="https://hoodiestore-dm.myshopify.com/pages/contact-us">Contact us</a></li>
 
                         <li><a href="/pages/faqs.php">FAQs</a></li>
 
