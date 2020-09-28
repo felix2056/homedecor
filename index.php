@@ -9,7 +9,7 @@
         <div class="flexslider" id="heroSlider--slideshow" data-section-id="slideshow" data-section-type="slideshow-section" data-slider-home-auto="false" data-slider-home-rate="5000">
             <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1000px, 0px, 0px);">
                 <li aria-hidden="true" style="width: 1000px; margin-right: 0px; float: left; display: block;">
-                    <a href="/collections/kitchen" class="slide-link">
+                    <a href="/collections/kitchen.php" class="slide-link">
                         <div id="slideShowImageWrapper-slideshow-130660433964_clone" class="lazyload__image-wrapper" data-image-id="130660433964" style="max-width: 1000px">
                             <div class="lazyload__image-wrapper no-js" style="padding-top:50.0%;">
                                 <img class="js lazypreload lazyautosizes lazyloaded" src="/assets/images/banner-big2-1_1080x.jpg" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="2.0" data-sizes="auto" alt="" draggable="false" data-srcset="/assets/images/banner-big2-1_1080x.jpg 2048w" sizes="1000px" srcset="/assets/images/banner-big2-1_1080x.jpg">
@@ -37,7 +37,7 @@
                 </li>
 
                 <li style="width: 1000px; margin-right: 0px; float: left; display: block;">
-                    <a href="/collections/kitchen" class="slide-link">
+                    <a href="/collections/kitchen.php" class="slide-link">
                         <div id="slideShowImageWrapper-slideshow-130660433964" class="lazyload__image-wrapper" data-image-id="130660433964" style="max-width: 1000px">
                             <div class="lazyload__image-wrapper no-js" style="padding-top:50.0%;">
                                 <img class="js lazypreload lazyautosizes lazyloaded" src="/assets/images/banner-big2-3_1080x.jpg" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="2.0" data-sizes="auto" alt="" draggable="false" data-srcset="/assets/images/banner-big2-3_1080x.jpg 2048w" sizes="1000px" srcset="/assets/images/banner-big2-3_1080x.jpg 2048w">
@@ -112,13 +112,13 @@
                 <p class="h1 section-header--left">Kitchen</p>
 
                 <div class="section-header--right">
-                    <a href="/collections/kitchen">More kitchen ›</a>
+                    <a href="/collections/kitchen.php">More kitchen ›</a>
                 </div>
             </div>
 
             <div class="grid-uniform row-negative-bottom">
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/kitchen/products/artificial-flowers" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -149,7 +149,7 @@
                 </div>
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/kitchen/products/kitchen-whisks-o" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -180,7 +180,7 @@
                 </div>
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/kitchen/products/kitchen-wall-stickers" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -211,7 +211,7 @@
                 </div>
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/kitchen/products/cabinet-wall-sticker" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
