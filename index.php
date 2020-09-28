@@ -23,7 +23,7 @@
                 </li>
 
                 <li style="width: 1000px; margin-right: 0px; float: left; display: block;" class="flex-active-slide" data-thumb-alt="">
-                    <a href="/collections/decor" class="slide-link">
+                    <a href="/collections/decor.php" class="slide-link">
                         <div id="slideShowImageWrapper-slideshow-130660335660" class="lazyload__image-wrapper" data-image-id="130660335660" style="max-width: 1000px">
                             <div class="lazyload__image-wrapper no-js" style="padding-top:50.0%;">
                                 <img class="js lazyautosizes lazyloaded" src="/assets/images/banner-big2-2_1080x.jpg?v=1545932360" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="2.0" data-sizes="auto" alt="" draggable="false" data-srcset="/assets/banner-big2-2_1080x.jpg" sizes="1000px" srcset="/assets/images/banner-big2-2_1080x.jpg">
@@ -64,7 +64,7 @@
             </div>
             <div class="grid-uniform text-center">
                 <div class="grid-item one-half">
-                    <a href="/collections/decor" title="Browse our Decor collection" class="featured-box">
+                    <a href="/collections/decor.php" title="Browse our Decor collection" class="featured-box">
                         <div class="featured-box--inner" style="height: 453px;">
                             <div class="featured-box--image  vertical-middle">
                                 <div id="" class="lazyload__image-wrapper no-js" style="max-width: 480px;">
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="grid-item one-half">
-                    <a href="/collections/furnishing" title="Browse our Furnishing collection" class="featured-box">
+                    <a href="/collections/furnishing.php" title="Browse our Furnishing collection" class="featured-box">
                         <div class="featured-box--inner" style="height: 453px;">
                             <div class="featured-box--image  vertical-middle">
                                 <div id="" class="lazyload__image-wrapper no-js" style="max-width: 480px;">
@@ -251,13 +251,13 @@
                 <p class="h1 section-header--left">Decor</p>
 
                 <div class="section-header--right">
-                    <a href="/collections/decor">More decor ›</a>
+                    <a href="/collections/decor.php">More decor ›</a>
                 </div>
             </div>
 
             <div class="grid-uniform row-negative-bottom">
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/decor/products/wall-stickers" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -288,7 +288,7 @@
                 </div>
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/decor/products/sofa-cushion-cover-throw-pillow" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -319,7 +319,7 @@
                 </div>
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/decor/products/crystal-crafts-with-led-light" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -350,7 +350,7 @@
                 </div>
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/decor/products/weather-forecast-crystal" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -389,13 +389,13 @@
             <div class="section-header">
                 <p class="h1 section-header--left">Dinning</p>
                 <div class="section-header--right">
-                    <a href="/collections/dining">More dining ›</a>
+                    <a href="/collections/dining.php">More dining ›</a>
                 </div>
             </div>
 
             <div class="grid-uniform row-negative-bottom">
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/dining/products/kitchen-dining-room-wall-sticker" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -426,7 +426,7 @@
                 </div>
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/dining/products/fridge-sticker-dining-room" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -458,7 +458,7 @@
 
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/dining/products/coffee-cup-wall-sticker-for-dining" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
@@ -490,7 +490,7 @@
 
 
                 <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
-                    <a href="/collections/dining/products/self-adhesive-wall-sticker" class="product-grid-item">
+                    <a href="/products/single.php" class="product-grid-item">
                         <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
                                 <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
