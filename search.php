@@ -22,7 +22,7 @@ if (isset($_GET['q'])) {
                     <h1 class="h2 text-center">Your search for "<?php echo $query; ?>" revealed the following:</h1>
                 <?php } ?>
                 
-                <form action="/search" method="get" class="search-bar" role="search">
+                <form action="/search.php" method="get" class="search-bar" role="search">
                     <input type="hidden" name="type" value="product">
 
                     <input type="search" name="q" value="<?php echo $query; ?>" placeholder="Search all products..."
