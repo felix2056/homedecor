@@ -16,7 +16,7 @@ $query = "";
 if (isset($_GET['q'])) {
     $query = $_GET['q'];
 
-    //$products = json_decode(searchProducts($query), true);
+    // $products = json_decode(searchProducts($query), true);
 }
 ?>
 

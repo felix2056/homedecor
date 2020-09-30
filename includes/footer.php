@@ -1,3 +1,15 @@
+<style>
+  .checkout-img {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: 768px) {
+  .checkout-img {
+    width: 100%;
+  }
+}
+</style>
+
 <div id="shopify-section-footer" class="shopify-section footer-section">
     <footer class="site-footer small--text-center" role="contentinfo">
         <div class="wrapper">
@@ -62,7 +74,7 @@
 
             <div class="grid">
                 <div class="grid-item three-half" style="text-align: center;margin-top: 20px;">
-                  <img src="/assets/images/checkout.webp" style="width: 40%;" />
+                  <img class="checkout-img" src="/assets/images/checkout.webp" />
                 </div>
             </div>
 

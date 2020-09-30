@@ -470,7 +470,7 @@
                                     <img src="/assets/images/products/product-image-867624654_360x.jpg" srcset="/assets/images/products/product-image-867624654_360x.jpg 2x" alt="Artificial Flowers" style="opacity:1;">
                                 </noscript>
                             </div>
-                        </div>>
+                        </div>
 
                         <p>Coffee Cup Wall Sticker For Dining</p>
 

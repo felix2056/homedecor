@@ -1514,13 +1514,11 @@ function getAllProducts() {
 
 function searchProducts($query) {
     $products = array();
-
+    
     foreach($GLOBALS['products'] as $product) {
-        return json_encode($product);
-        
-        if ($product['title'] == $query) {
-            array_push($products, $product);
-        }
+        // if ($product['title'] == $query) {
+        //     array_push($products, $product);
+        // }
         
         $search = array_search($query, $product['meta'], true);
         if (!empty($search)) {
