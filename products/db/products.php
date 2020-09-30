@@ -1512,6 +1512,11 @@ function getAllProducts() {
     return json_encode($GLOBALS['products']);
 }
 
+function getTopProducts($num) {
+    $products = array_slice($GLOBALS['products'], 0, $num);
+    return json_encode($products);
+}
+
 function searchProducts($query) {
     $products = array();
     

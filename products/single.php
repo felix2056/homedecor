@@ -217,7 +217,7 @@
             <hr>
 
             <?php
-                $products = array_slice(json_decode(getAllProducts(), true), 3);
+                $products = json_decode(getTopProducts(8), true);
             ?>
             
             <h2 class="h1">We Also Recommend</h2>
