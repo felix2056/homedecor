@@ -191,7 +191,7 @@
                                                 <p class="layout-flex__item">
                                                     <span aria-hidden="true">Already have an account?</span>
                                                     <a
-                                                        href="https://homedecor-1604.myshopify.com/account/login?checkout_url=https%3A%2F%2Fhomedecor-1604.myshopify.com%2F2286845996%2Fcheckouts%2F086ededfb92307c625d7d00f3a1d8a88%3Fkey%3D2b64a25232620bc3e7cc001a0654d96e%26step%3Dcontact_information">
+                                                        href="/account/login.php">
                                                         <span class="visually-hidden">Already have an account?</span>
                                                         Log in
                                                     </a> </p>
