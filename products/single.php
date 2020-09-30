@@ -55,16 +55,16 @@
                                             data-srcset="<?php echo $single['featured_image']; ?> 2048w" sizes="348px"
                                             srcset="<?php echo $single['featured_image']; ?> 2048w"
                                             style="display: block;">
-                                        <img src="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-539540110_1024x1024@2x.jpg?v=1575446689"
+                                        <img src="<?php echo $single['featured_image']; ?>"
                                             class="zoomImg"
                                             style="position: absolute; top: -60.069px; left: -388.716px; opacity: 0; width: 750px; height: 750px; border: none; max-width: none; max-height: none;">
                                     </div>
                                 </div>
 
                                 <noscript>
-                                    <img src="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-539540110_580x.jpg?v=1575446689"
-                                        srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-539540110_580x.jpg?v=1575446689 1x, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-539540110_580x@2x.jpg?v=1575446689 2x"
-                                        alt="Beautiful Yellow faery resin" style="opacity:1;">
+                                    <img src="<?php echo $single['featured_image']; ?>"
+                                        srcset="<?php echo $single['featured_image']; ?> 1x, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-539540110_580x@2x.jpg?v=1575446689 2x"
+                                        alt="<?php echo $single['title']; ?>" style="opacity:1;">
                                 </noscript>
                             </div>
 
@@ -95,7 +95,7 @@
                             <li>
                                 <span id="productPrice-product-template" class="h1">
                                     <span aria-hidden="true"><?php echo $single['price'] ?></span>
-                                    <span aria-hidden="true"><s><?php echo $single['sale_price'] ?></span>
+                                    <span aria-hidden="true"><s><?php echo $single['sale_price'] ?></s></span>
 
                                     <span class="visually-hidden">
                                         <span class="visually-hidden">Regular price</span>
@@ -172,10 +172,14 @@
 
                     <div class="product-description rte" itemprop="description">
                         <div>
-                            <p><span><strong>Theme:</strong> Fairy</span><br><span><strong>Material:</strong>
-                                    Resin</span><br><span><strong>Style:</strong>
-                                    Pastoral</span><br><span><strong>Type:</strong> Decorative Flowers &amp;
-                                    Wreaths</span><br><span><strong>stely:</strong> modern</span></p>
+                            <p>
+                            <?php foreach ($single['meta'] as $key => $value) : ?>
+                                <span>
+                                    <strong><?php echo $key; ?>:</strong> <?php echo $value; ?>
+                                </span>
+                                <br>
+                            <?php endforeach; ?>
+                            </p>
                         </div>
                     </div>
 
@@ -211,240 +215,56 @@
             </div>
 
             <hr>
+
+            <?php
+                $products = array_slice(json_decode(getAllProducts(), true), 3);
+            ?>
+            
             <h2 class="h1">We Also Recommend</h2>
+            <?php if (count($products) > 0) : ?>
             <div class="grid-uniform">
-                <div class="grid-item large--one-fifth medium--one-third small--one-half on-sale">
-                    <a href="/products/single.php" class="product-grid-item">
-                        <div class="product-grid-image">
+                <?php foreach ($products as $product) : ?>
+                <div class="grid-item small--one-half medium--one-quarter large--one-quarter on-sale">
+                    <a href="/products/single.php?product=<?php echo $product['id'] ?>" class="product-grid-item">
+                        <div class="product-grid-image" style="height: 227px;">
                             <div class="product-grid-image--centered">
-                                <div class="lazyload__image-wrapper no-js" style="max-width: 195px">
+                                <div class="lazyload__image-wrapper no-js" style="max-width: 250px">
                                     <div style="padding-top:100.0%;">
                                         <img class="no-js lazyautosizes lazyloaded"
                                             data-widths="[125, 180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                                            data-aspectratio="1.0" data-sizes="auto" alt="Creative home furnishings"
-                                            data-srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_2048x.jpg?v=1575446689 2048w"
-                                            sizes="176px"
-                                            srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_2048x.jpg?v=1575446689 2048w">
+                                            data-aspectratio="1.0" data-sizes="auto"
+                                            alt="<?php echo $product['title'] ?>"
+                                            data-srcset="<?php echo $product['featured_image'] ?> 2048w" sizes="227px"
+                                            srcset="<?php echo $product['featured_image'] ?> 2048w">
                                     </div>
                                 </div>
                                 <noscript>
-                                    <img src="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_580x.jpg?v=1575446689"
-                                        srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_580x.jpg?v=1575446689 1x, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-524791658_580x@2x.jpg?v=1575446689 2x"
-                                        alt="Creative home furnishings" style="opacity:1;">
+                                    <img src="<?php echo $product['featured_image'] ?>"
+                                        srcset="<?php echo $product['featured_image'] ?> 2x"
+                                        alt="<?php echo $product['title'] ?>" style="opacity:1;">
                                 </noscript>
                             </div>
                         </div>
 
-                        <p>Creative home furnishings</p>
+                        <p><?php echo $product['title'] ?></p>
 
                         <div class="product-item--price">
                             <span class="h1 medium--left">
                                 <span class="visually-hidden">Sale price</span>
-                                <small aria-hidden="true">$36<sup>54</sup></small>
-                                <span class="visually-hidden">$36.54</span>
-
-                                <small>
-                                    <s>
-                                        <span class="visually-hidden">Regular price</span>
-                                        <small aria-hidden="true">$48<sup>72</sup></small>
-                                        <span class="visually-hidden">$48.72</span>
-                                    </s>
-                                </small>
+                                <small aria-hidden="true"><?php echo $product['price'] ?></small>
+                                <span class="visually-hidden">$22.62</span>
                             </span>
 
+
                             <span class="sale-tag medium--right">
-                                Save $12.18
+                                Save $<?php echo $product['sale_price'] ?>
                             </span>
                         </div>
                     </a>
                 </div>
-
-                <div class="grid-item large--one-fifth medium--one-third small--one-half on-sale">
-                    <a href="/products/single.php" class="product-grid-item">
-                        <div class="product-grid-image">
-                            <div class="product-grid-image--centered">
-                                <div class="lazyload__image-wrapper no-js" style="max-width: 195px">
-                                    <div style="padding-top:99.87357774968395%;">
-                                        <img class="no-js lazyautosizes lazyloaded"
-                                            data-widths="[125, 180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                                            data-aspectratio="1.0012658227848101" data-sizes="auto"
-                                            alt="Modern Ceramic Figurines Ornament"
-                                            data-srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_2048x.jpg?v=1575446689 2048w"
-                                            sizes="176px"
-                                            srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_2048x.jpg?v=1575446689 2048w">
-                                    </div>
-                                </div>
-                                <noscript>
-                                    <img src="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_580x.jpg?v=1575446689"
-                                        srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_580x.jpg?v=1575446689 1x, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-729077756_580x@2x.jpg?v=1575446689 2x"
-                                        alt="Modern Ceramic Figurines Ornament" style="opacity:1;">
-                                </noscript>
-
-
-                            </div>
-                        </div>
-
-                        <p>Modern Ceramic Figurines Ornament</p>
-
-                        <div class="product-item--price">
-                            <span class="h1 medium--left">
-                                <span class="visually-hidden">Sale price</span>
-                                <small aria-hidden="true">$48<sup>81</sup></small>
-                                <span class="visually-hidden">$48.81</span>
-
-
-                                <small>
-                                    <s>
-                                        <span class="visually-hidden">Regular price</span>
-                                        <small aria-hidden="true">$65<sup>08</sup></small>
-                                        <span class="visually-hidden">$65.08</span>
-                                    </s>
-                                </small>
-                            </span>
-
-                            <span class="sale-tag medium--right">
-                                Save $16.27
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="grid-item large--one-fifth medium--one-third small--one-half on-sale">
-                    <a href="/products/single.php" class="product-grid-item">
-                        <div class="product-grid-image">
-                            <div class="product-grid-image--centered">
-                                <div class="lazyload__image-wrapper no-js" style="max-width: 195px">
-                                    <div style="padding-top:100.0%;">
-                                        <img class="no-js lazyautosizes lazyloaded"
-                                            data-widths="[125, 180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                                            data-aspectratio="1.0" data-sizes="auto" alt="Retro Camera Model Craft"
-                                            data-srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_2048x.jpg?v=1575446689 2048w"
-                                            sizes="176px"
-                                            srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_2048x.jpg?v=1575446689 2048w">
-                                    </div>
-                                </div>
-                                <noscript>
-                                    <img src="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_580x.jpg?v=1575446689"
-                                        srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_580x.jpg?v=1575446689 1x, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-626832206_580x@2x.jpg?v=1575446689 2x"
-                                        alt="Retro Camera Model Craft" style="opacity:1;">
-                                </noscript>
-                            </div>
-                        </div>
-
-                        <p>Retro Camera Model Craft</p>
-
-                        <div class="product-item--price">
-                            <span class="h1 medium--left">
-
-                                <span class="visually-hidden">Sale price</span>
-                                <small aria-hidden="true">$45<sup>33</sup></small>
-                                <span class="visually-hidden">$45.33</span>
-                                <small>
-                                    <s>
-                                        <span class="visually-hidden">Regular price</span>
-                                        <small aria-hidden="true">$60<sup>44</sup></small>
-                                        <span class="visually-hidden">$60.44</span>
-                                    </s>
-                                </small>
-                            </span>
-
-                            <span class="sale-tag medium--right">
-                                Save $15.11
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="grid-item large--one-fifth medium--one-third small--one-half on-sale">
-                    <a href="/products/single.php" class="product-grid-item">
-                        <div class="product-grid-image">
-                            <div class="product-grid-image--centered">
-                                <div class="lazyload__image-wrapper no-js" style="max-width: 195px">
-                                    <div style="padding-top:100.0%;">
-                                        <img class="no-js lazyautosizes lazyloaded"
-                                            data-widths="[125, 180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                                            data-aspectratio="1.0" data-sizes="auto" alt="Russian porcelain doll"
-                                            data-srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_2048x.jpg?v=1575446689 2048w"
-                                            sizes="176px"
-                                            srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_2048x.jpg?v=1575446689 2048w">
-                                    </div>
-                                </div>
-                                <noscript>
-                                    <img src="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_580x.jpg?v=1575446689"
-                                        srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_580x.jpg?v=1575446689 1x, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-556495505_580x@2x.jpg?v=1575446689 2x"
-                                        alt="Russian porcelain doll" style="opacity:1;">
-                                </noscript>
-                            </div>
-                        </div>
-
-                        <p>Russian porcelain doll</p>
-
-                        <div class="product-item--price">
-                            <span class="h1 medium--left">
-                                <span class="visually-hidden">Sale price</span>
-                                <small aria-hidden="true">$81<sup>90</sup></small>
-                                <span class="visually-hidden">$81.90</span>
-                                <small>
-                                    <s>
-                                        <span class="visually-hidden">Regular price</span>
-                                        <small aria-hidden="true">$109<sup>20</sup></small>
-                                        <span class="visually-hidden">$109.20</span>
-                                    </s>
-                                </small>
-                            </span>
-
-                            <span class="sale-tag medium--right">
-                                Save $27.30
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="grid-item large--one-fifth medium--one-third small--one-half on-sale">
-                    <a href="/products/single.php" class="product-grid-item">
-                        <div class="product-grid-image">
-                            <div class="product-grid-image--centered">
-                                <div class="lazyload__image-wrapper no-js" style="max-width: 195px">
-                                    <div style="padding-top:100.0%;">
-                                        <img class="no-js lazyautosizes lazyloaded"
-                                            data-widths="[125, 180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                                            data-aspectratio="1.0" data-sizes="auto" alt="White Animal Ornaments"
-                                            data-srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_2048x.jpg?v=1575446689 2048w"
-                                            sizes="176px"
-                                            srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_125x.jpg?v=1575446689 125w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_180x.jpg?v=1575446689 180w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_360x.jpg?v=1575446689 360w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_540x.jpg?v=1575446689 540w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_720x.jpg?v=1575446689 720w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_900x.jpg?v=1575446689 900w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1080x.jpg?v=1575446689 1080w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1296x.jpg?v=1575446689 1296w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1512x.jpg?v=1575446689 1512w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_1728x.jpg?v=1575446689 1728w, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_2048x.jpg?v=1575446689 2048w">
-                                    </div>
-                                </div>
-                                <noscript>
-                                    <img src="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_580x.jpg?v=1575446689"
-                                        srcset="//cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_580x.jpg?v=1575446689 1x, //cdn.shopify.com/s/files/1/0022/8684/5996/products/product-image-760595048_580x@2x.jpg?v=1575446689 2x"
-                                        alt="White Animal Ornaments" style="opacity:1;">
-                                </noscript>
-                            </div>
-                        </div>
-
-                        <p>White Animal Ornaments</p>
-
-                        <div class="product-item--price">
-                            <span class="h1 medium--left">
-                                <span class="visually-hidden">Sale price</span>
-                                <small aria-hidden="true">$3<sup>75</sup></small>
-                                <span class="visually-hidden">$3.75</span>
-                                <small>
-                                    <s>
-                                        <span class="visually-hidden">Regular price</span>
-                                        <small aria-hidden="true">$5<sup>00</sup></small>
-                                        <span class="visually-hidden">$5.00</span>
-                                    </s>
-                                </small>
-                            </span>
-
-                            <span class="sale-tag medium--right">
-                                Save $1.25
-                            </span>
-                        </div>
-                    </a>
-                </div>
+                <?php endforeach; ?>
             </div>
+            <?php endif; ?>
         </div>
     </div>
 </main>
