@@ -1206,6 +1206,12 @@
                         <p class="copyright-text ">
                             All rights reserved homedecor-1604
                         </p>
+
+                        <div class="grid">
+                            <div class="grid-item three-half" style="text-align: center;margin-top: 20px;">
+                                <img class="checkout-img" src="/assets/images/checkout.webp" />
+                            </div>
+                        </div>
                     </footer>
                 </div>
 
