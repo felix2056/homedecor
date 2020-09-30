@@ -38,7 +38,7 @@
                     </form>
 
 
-                    <a href="/cart" class="header-cart-btn cart-toggle">
+                    <a href="/products/cart.php" class="header-cart-btn cart-toggle">
                         <span class="icon icon-cart"></span>
                         Cart <span class="cart-count cart-badge--desktop hidden-count">0</span>
                     </a>
@@ -52,7 +52,7 @@
             <button class="menu-toggle mobileNavBar-link" aria-controls="navBar" aria-expanded="false"><span class="icon icon-hamburger" aria-hidden="true"></span>Menu</button>
         </div>
         <div class="display-table-cell">
-            <a href="/cart" class="cart-toggle mobileNavBar-link">
+            <a href="/products/cart.php" class="cart-toggle mobileNavBar-link">
                 <span class="icon icon-cart"></span>
                 Cart <span class="cart-count hidden-count">0</span>
             </a>

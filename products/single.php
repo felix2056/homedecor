@@ -159,9 +159,9 @@
                                         </button>
                                     </div>
                                     <div>
-                                        <button type="button"
+                                        <a href="checkout.php?product=<?php echo $single['id'] ?>"
                                             class="shopify-payment-button__button shopify-payment-button__button--unbranded _2ogcW-Q9I-rgsSkNbRiJzA _2EiMjnumZ6FVtlC7RViKtj _2-dUletcCZ2ZL1aaH0GXxT"
-                                            data-testid="Checkout-button">Buy it now</button>
+                                            data-testid="Checkout-button">Buy it now</a>
                                     </div>
                                 </div>
                             </div>
