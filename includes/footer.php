@@ -59,6 +59,14 @@
             </div>
 
             <hr class="hr--small">
+
+            <div class="grid">
+                <div class="grid-item three-half" style="text-align: center;margin-top: 20px;">
+                  <img src="/assets/images/checkout.webp" style="width: 40%;" />
+                </div>
+            </div>
+
+            <hr class="hr--small">
             
             <div class="grid">
                 <div class="grid-item">
@@ -66,16 +74,7 @@
                         <li>
                             © 2020 <a href="/" title="">homedecor-1604</a>
                         </li>
-                        <li>
-                            <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a>
-                        </li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="grid">
-                <div class="grid-item three-half" style="text-align: center;margin-top: 20px;">
-                  <img src="/assets/images/checkout.webp" />
                 </div>
             </div>
         </div>

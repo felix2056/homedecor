@@ -1507,4 +1507,27 @@ function find($id) {
     }
     return null;
 }
+
+function getAllProducts() {
+    return json_encode($GLOBALS['products']);
+}
+
+function searchProducts($query) {
+    $products = array();
+
+    foreach($GLOBALS['products'] as $product) {
+        return json_encode($product);
+        
+        if ($product['title'] == $query) {
+            array_push($products, $product);
+        }
+        
+        $search = array_search($query, $product['meta'], true);
+        if (!empty($search)) {
+            array_push($products, $GLOBALS['products'][$search]);
+        }
+    }
+
+    return json_encode($products);
+}
 ?>
