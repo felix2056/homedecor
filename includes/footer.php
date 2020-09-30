@@ -1,21 +1,9 @@
 <div id="shopify-section-footer" class="shopify-section footer-section">
-
     <footer class="site-footer small--text-center" role="contentinfo">
         <div class="wrapper">
-
             <div class="grid">
-
-
-
-
-
-
                 <div class="grid-item small--one-whole two-twelfths">
-
                     <h3>Useful links</h3>
-
-
-
                     <ul>
                         <li><a href="/search.php">Search</a></li>
 
@@ -24,50 +12,21 @@
                         <li><a href="/pages/contact-us.php">Contact us</a></li>
 
                         <li><a href="/pages/faqs.php">FAQs</a></li>
-
                     </ul>
-
-
                 </div>
-
-
-
-
 
                 <div class="grid-item small--one-whole one-half">
-
                     <h3>About us</h3>
-
-
-
-
-
                     <p>Buy&nbsp;<em>Home Decor</em>&nbsp;products Online. Shop for&nbsp;<em>Home Decor</em>&nbsp;from wide range of shelves, key holders, lamps, clocks, photo frames &amp; more</p>
-
-
-
-
                 </div>
 
-
-
-
-
                 <div class="grid-item small--one-whole one-third">
-
                     <h3>Newsletter</h3>
-
-
-
                     <div class="site-footer__newsletter-subtext">
-
                         <p>Promotions, new products and sales. Directly to your inbox.</p>
-
                     </div>
                     <div class="form-vertical">
                         <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
-
-
                             <input type="hidden" name="contact[tags]" value="newsletter">
                             <div class="input-group">
                                 <label for="Email" class="visually-hidden">Email</label>
@@ -76,53 +35,31 @@
                                     <button type="submit" class="btn-secondary btn--small" name="commit" id="subscribe">Sign Up</button>
                                 </span>
                             </div>
-
                         </form>
                     </div>
-
-
                 </div>
-
-
             </div>
-
 
             <hr class="hr--small">
 
-
             <div class="grid">
-
                 <div class="grid-item large--two-fifths">
-
                     <ul class="legal-links inline-list">
-
                         <li><a href="/pages/privacy-policy.php">Privacy Policy</a></li>
-
                         <li><a href="/pages/return-refunds.php">Return &amp; Refunds</a></li>
-
                         <li><a href="/pages/terms-conditions.php">Terms &amp; Conditions</a></li>
-
                     </ul>
                 </div>
 
 
                 <div class="grid-item large--three-fifths text-right">
                     <ul class="inline-list social-icons">
-
-
-
-
-
-
-
-
-
-
                     </ul>
                 </div>
-
             </div>
+
             <hr class="hr--small">
+            
             <div class="grid">
                 <div class="grid-item">
                     <ul class="legal-links inline-list">
@@ -136,13 +73,13 @@
                 </div>
             </div>
 
+            <div class="grid">
+                <div class="grid-item three-half" style="text-align: center;margin-top: 20px;">
+                  <img src="/assets/images/checkout.webp" />
+                </div>
+            </div>
         </div>
-
     </footer>
-
-
-
-
 </div>
 
 <script>
@@ -173,9 +110,7 @@
 
 
 
-
 <script id="cartTemplate" type="text/template">
-
     <form action="/cart" method="post" class="cart-form" novalidate>
       <div class="ajaxifyCart--products">
         {{#items}}
@@ -260,16 +195,11 @@
     <li id="a11y-refresh-page-message">choosing a selection results in a full page refresh</li>
 </ul>
 
-
-
-
-
-
 <div id="ajaxifyModal" class="ajaxify-modal"><button class="ajaxifyCart--close" title="Close Cart">Close Cart</button>
     <div id="ajaxifyCart" class="ajaxifyCart--content"></div>
 </div>
 
 <div id="ajaxifyCart-overlay"></div>
-</body>
 
+</body>
 </html>
